@@ -1,8 +1,3 @@
-"""
-Visualization module for financial news data analysis.
-This module provides functions for creating various plots for data analysis.
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
