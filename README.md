@@ -74,9 +74,46 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+## Features
+
+### Task 3: News Sentiment and Stock Correlation Analysis
+
+A complete implementation of the correlation analysis between news headline sentiment and stock price movements. This feature includes:
+
+- **Date Alignment**: Normalizes dates between news and stock datasets for accurate correlation
+- **Sentiment Analysis**: Uses TextBlob to analyze sentiment in financial headlines
+- **Stock Returns Calculation**: Computes daily percentage changes in stock closing prices
+- **Aggregation**: Combines multiple headlines per day into a single sentiment score
+- **Correlation Analysis**: Calculates Pearson correlation coefficient between sentiment and stock returns
+- **Lagged Analysis**: Examines time-delayed relationships between sentiment and price movements
+- **Visualization**: Provides comprehensive visualizations for analyzing the sentiment-price relationship
+
+### Key Modules
+
+- `src/features/sentiment_correlation.py`: Core implementation for sentiment analysis and correlation
+- `src/visualization/sentiment_visualization.py`: Visualization tools for sentiment-price relationships
+- `src/examples/sentiment_correlation_example.py`: Example script demonstrating the full analysis pipeline
+
 ## Usage
 
-Detailed instructions for running the analysis will be provided in the notebooks directory.
+### Running the Sentiment Correlation Analysis
+
+```bash
+# Navigate to the project directory
+cd Predicting-Price-Moves-with-News-Sentiment
+
+# Run the example script
+python src/examples/sentiment_correlation_example.py
+```
+
+This will:
+1. Load news headlines and stock price data
+2. Perform sentiment analysis on headlines
+3. Calculate daily stock returns
+4. Determine correlation between sentiment and returns
+5. Generate visualizations in the output directory
+
+Detailed instructions for running other analyses are provided in the notebooks directory.
 
 ## Contributors
 
